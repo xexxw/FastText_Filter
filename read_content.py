@@ -13,14 +13,11 @@ for line in lines:
     data = json.loads(line)
     source = data["source"]
     content = data["content"]
-    length = data["length"]
-    filename = data["filename"]
-    hashval = data["hashval"]
     data_list.append([content])
 
 
 # # 将数据写入CSV文件
-# headers = ["source", "content", "length", "filename", "hashval"]
+# headers = ["source", "content"]
 data_lines = [item[0] for item in data_list]
 with open(out_file, "w", encoding="utf-8") as file:
     file.write("\n".join(data_lines))
