@@ -3,6 +3,7 @@ Use fasttext to classify text.
 
 ## Preparing the dataset
 python train_data.py
+
 python val_data.py
 
 ## Train model
