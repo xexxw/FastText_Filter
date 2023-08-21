@@ -11,3 +11,6 @@ python train.py
 
 ## Test model
 python val.py
+
+## Validate model in Mapreduce
+cat val_data | python map.py
