@@ -5,7 +5,7 @@ import fasttext
 classifier = fasttext.load_model('../../checkpoints/fasttext/classifier_2023-08-17-18-47.model')
 
 
-# 验证集准确率
+# 测试集准确率
 result = classifier.test('../../data/val/val_data.txt')
 
 print('P@1:', result[1])
