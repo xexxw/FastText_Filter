@@ -3,7 +3,6 @@ import fasttext
 import json
 import jieba
 import re
-from comm import sys_stderr_write
 
 
 
