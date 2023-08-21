@@ -2,10 +2,10 @@ import random
 from preprocess import preprocess_text as preprocess
 
 
-with open('../../data/val/filt.txt', 'r', encoding='utf-8') as filt:
+with open('../../data/test/filt.txt', 'r', encoding='utf-8') as filt:
     filt_lines = filt.readlines()
 
-with open('../../data/val/ori.txt', 'r', encoding='utf-8') as ori:
+with open('../../data/test/ori.txt', 'r', encoding='utf-8') as ori:
     ori_lines = ori.readlines()
 
 cate_dic = {'ori':1, 'filter':2}
@@ -19,7 +19,7 @@ random.shuffle(sentences)
 
 # 将数据保存到train_data.txt中
 print("writing data to fasttext format...")
-out = open('../../data/val/val_data.txt', 'w', encoding='utf-8')
+out = open('../../data/test/test_data.txt', 'w', encoding='utf-8')
 for sentence in sentences:
     out.write(sentence+"\n")
-print("Saving val_data done!")
+print("Saving test_data done!")
