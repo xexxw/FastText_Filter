@@ -17,5 +17,5 @@ def preprocess_text(content_lines, sentences, category):
             # 将句子处理成  __label__1 词语 词语 词语 ……的形式
             sentences.append("__label__"+str(category)+" , "+" ".join(segs))
         except Exception as e:
-            print(Exception, e)
+            print(e)
             continue
